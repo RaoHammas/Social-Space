@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<ApplicationIcon>iconSocialSpace.ico</ApplicationIcon>
+		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+		<Description>Social Space app made by Rao Hammas Hussain | +92 3068513103 | Pakistan</Description>
+		<Product>Social Space</Product>
+		<PackageId>SocialSpace</PackageId>
+		<Authors>Rao Hammas Hussain</Authors>
+		<PackageIcon>iconSocialSpace.ico</PackageIcon>
+		<PackageIconUrl />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Database\SocialHubDb.db" />
+		<None Include="C:\Users\hamma\Desktop\iconSocialSpace.ico">
+		  <Pack>True</Pack>
+		  <PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Database\SocialHubDb.db">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Dapper" Version="2.0.90" />
+		<PackageReference Include="Microsoft.Web.WebView2" Version="1.0.961.33" />
+		<PackageReference Include="ModernWpfUI" Version="0.9.4" />
+		<PackageReference Include="System.Data.SQLite.Core" Version="1.0.115" />
+	</ItemGroup>
+
+</Project>

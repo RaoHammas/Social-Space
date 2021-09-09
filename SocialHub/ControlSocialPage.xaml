@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="SocialSpace.ControlSocialPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:ui="http://schemas.modernwpf.com/2019"
+             mc:Ignorable="d" Padding="0" Margin="10">
+    <Border >
+        <Grid Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="15" />
+                <RowDefinition />
+                <RowDefinition Height="0" />
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0" Background="{DynamicResource ColorBrushWhite}" Margin="0 0 0 0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <ui:SimpleStackPanel Orientation="Horizontal" Spacing="10" Grid.Column="1"
+                                         HorizontalAlignment="Right">
+                        <ui:TitleBarButton x:Name="ButtonDeleteApp" ToolTip="Delete this app" Width="15" Height="15">
+                            <ui:PathIcon Foreground="IndianRed"  Width="15" Height="15"
+                                         Data="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
+                        </ui:TitleBarButton>
+                        <ui:TitleBarButton x:Name="ButtonClose" ToolTip="Close" Width="15" Height="15">
+                            <ui:PathIcon Foreground="{DynamicResource ColorBrushSecondary}" Width="15" Height="15"
+                                         Data="M256 48C141.1 48 48 141.1 48 256s93.1 208 208 208 208-93.1 208-208S370.9 48 256 48zm52.7 283.3L256 278.6l-52.7 52.7c-6.2 6.2-16.4 6.2-22.6 0-3.1-3.1-4.7-7.2-4.7-11.3 0-4.1 1.6-8.2 4.7-11.3l52.7-52.7-52.7-52.7c-3.1-3.1-4.7-7.2-4.7-11.3 0-4.1 1.6-8.2 4.7-11.3 6.2-6.2 16.4-6.2 22.6 0l52.7 52.7 52.7-52.7c6.2-6.2 16.4-6.2 22.6 0 6.2 6.2 6.2 16.4 0 22.6L278.6 256l52.7 52.7c6.2 6.2 6.2 16.4 0 22.6-6.2 6.3-16.4 6.3-22.6 0z" />
+                        </ui:TitleBarButton>
+
+                    </ui:SimpleStackPanel>
+                </Grid>
+            </Border>
+
+            <Grid x:Name="GridBrowserContainer" Grid.Row="1" Margin="0 5 0 0"/>
+
+        </Grid>
+    </Border>
+</UserControl>
