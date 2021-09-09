@@ -14,7 +14,7 @@ Star the reporsitory & Submit your issues or suggestions. Thanks
 
 **Made with ❤️**  
 
-![image](https://user-images.githubusercontent.com/16499626/132751194-1eae53b7-5164-43a7-bb71-d465b66b729e.png)  
+![image](https://user-images.githubusercontent.com/16499626/132754177-b09afe2d-93e9-4b0e-bad6-0b052f73ca07.png)
 ![image](https://user-images.githubusercontent.com/16499626/132751743-439849d5-5824-4f5e-aea8-e477499e3c77.png)
 ![image](https://user-images.githubusercontent.com/16499626/132752008-8986d58b-4d17-407c-baee-9f744ebb1fb5.png)
 ![image](https://user-images.githubusercontent.com/16499626/132752227-75c88fea-a0b1-428b-bdce-cc08dc4143d0.png)
