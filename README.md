@@ -1,7 +1,8 @@
 # <img src="https://user-images.githubusercontent.com/16499626/132752421-1de5efeb-ee2b-4aca-bcbe-bc79c3e7ec0c.png" width="40" height="50"> Social-Space
 
- Social Space is an app that let you open your apps side-by-side & save your workspaces.  
+ **Social Space** is an app that lets you open your apps side-by-side & save your workspaces.  
  **-DOWNLOAD**  
+-[Download Spcial Space v1.0](https://github.com/RaoHammas/Social-Space/releases/tag/Social-Space)  
  
  **-FEATURES**  
  1. Open as many apps as you want.  
@@ -9,6 +10,7 @@
  3. Add any app you wish
  4. Remove any app you wish
  5. Save/Update/Delete WorkSpaces  
+ 6. Supports Windows 7, 8, 8.1, 10, 11 maybe XP too 😁
 
 Star the reporsitory & Submit your issues or suggestions. Thanks  
 
