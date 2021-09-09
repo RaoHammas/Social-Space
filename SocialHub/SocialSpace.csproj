@@ -12,6 +12,11 @@
 		<Authors>Rao Hammas Hussain</Authors>
 		<PackageIcon>iconSocialSpace.ico</PackageIcon>
 		<PackageIconUrl />
+		<PackageProjectUrl>https://github.com/RaoHammas/Social-Space</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/RaoHammas/Social-Space</RepositoryUrl>
+		<PackageTags>Social Space, Social, app, Apps</PackageTags>
+		<PackageReleaseNotes>Social Space app made by Rao Hammas Hussain | +92 3068513103 | Pakistan</PackageReleaseNotes>
+		<NeutralLanguage />
 	</PropertyGroup>
 
 	<ItemGroup>
