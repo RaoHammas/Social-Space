@@ -28,10 +28,13 @@
                 <Border.Effect>
                     <DropShadowEffect Color="{DynamicResource ColorSecondary}" Opacity="0.0" BlurRadius="80" />
                 </Border.Effect>
-                <TextBlock FontWeight="Light" VerticalAlignment="Center" Margin="10 0 10 0"
-                           Foreground="{DynamicResource ColorBrushWhite}">
-                    Social Spaces 1.0
-                </TextBlock>
+                <ui:SimpleStackPanel Spacing="5" Orientation="Horizontal" Margin="10 0 10 0">
+                    <Image Source="socialSpaceIcon.png" Width="15" Height="20"></Image>
+                    <TextBlock FontWeight="Light" VerticalAlignment="Center" 
+                               Foreground="{DynamicResource ColorBrushWhite}">
+                        Social Spaces 1.0
+                    </TextBlock>
+                </ui:SimpleStackPanel>
             </Border>
             <ui:SimpleStackPanel Spacing="0" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 0 140 0">
                 <ui:TitleBarButton ToolTip="Developer page" Click="Click_OpenDeveloperPage">
