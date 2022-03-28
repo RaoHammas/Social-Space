@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:ui="http://schemas.modernwpf.com/2019"
         xmlns:socialSpace="clr-namespace:SocialSpace"
-        mc:Ignorable="d" Title="SocialHub"
+        mc:Ignorable="d" Title="SocialHub" d:DesignHeight="800" d:DesignWidth="1200"
         WindowStartupLocation="CenterScreen" WindowState="Normal" Background="{DynamicResource ColorBrushPrimary}"
         WindowStyle="None"
         ui:WindowHelper.UseModernWindowStyle="True" ui:WindowHelper.FixMaximizedWindow="True"

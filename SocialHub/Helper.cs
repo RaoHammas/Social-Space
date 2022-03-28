@@ -13,6 +13,7 @@ namespace SocialSpace
         {
             return @"Data Source = .\Database\SocialHubDb.db; Version=3; providerName=System.Data.SqlClient";
         }
+
         public static List<SocialApp> GetSocialApps()
         {
             using IDbConnection con = new SQLiteConnection(GetConnectionString());
@@ -21,10 +22,12 @@ namespace SocialSpace
 
             foreach (var item in items)
             {
-                item.IconSource = "https://api.statvoo.com/favicon/?url="+item.DefaultAddress;
+                item.IconSource = "https://www.google.com/s2/favicons?domain=" + item.DefaultAddress + "&sz=128";
             }
+
             return items;
         }
+
         public static bool SaveSocialApp(SocialApp item)
         {
             using IDbConnection con = new SQLiteConnection(GetConnectionString());
@@ -32,7 +35,8 @@ namespace SocialSpace
             string query = "INSERT INTO SocialApps (AppTitle, DefaultAddress) VALUES (@AppTitle,@DefaultAddress)";
             if (item.Id > 0)
             {
-                query = @"UPDATE SocialMenuItems SET AppTitle = @AppTitle, DefaultAddress = @DefaultAddress WHERE Id = @Id;";
+                query =
+                    @"UPDATE SocialMenuItems SET AppTitle = @AppTitle, DefaultAddress = @DefaultAddress WHERE Id = @Id;";
             }
 
             var rowsAffected = con.Execute(query, item);
@@ -137,7 +141,8 @@ namespace SocialSpace
                 foreach (var item in space.WorkSpaceItems)
                 {
                     item.WorkSpaceId = spaceId;
-                    query = "INSERT INTO WorkSpacePages (WorkSpaceId, AppId , Address) VALUES (@WorkSpaceId, @AppId,@Address)";
+                    query =
+                        "INSERT INTO WorkSpacePages (WorkSpaceId, AppId , Address) VALUES (@WorkSpaceId, @AppId,@Address)";
                     if (item.Id > 0)
                     {
                         query =
@@ -156,7 +161,8 @@ namespace SocialSpace
         public static bool DeleteWorkSpace(WorkSpace workspace)
         {
             using IDbConnection con = new SQLiteConnection(GetConnectionString());
-            string query = @"Delete from WorkSpaces WHERE Id = @Id; Delete from WorkSpacePages Where WorkSpaceId = @WorkSpaceId";
+            string query =
+                @"Delete from WorkSpaces WHERE Id = @Id; Delete from WorkSpacePages Where WorkSpaceId = @WorkSpaceId";
             var rowsAffected = con.Execute(query, new
             {
                 Id = workspace.Id,
