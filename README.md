@@ -1,8 +1,8 @@
 # <img src="https://user-images.githubusercontent.com/16499626/132752421-1de5efeb-ee2b-4aca-bcbe-bc79c3e7ec0c.png" width="40" height="50"> Social-Space
 
  **Social Space** is an app that lets you open your apps side-by-side & save your workspaces.  
- **-DOWNLOAD**  
--[Download Spcial Space v1.0](https://github.com/RaoHammas/Social-Space/releases/tag/Social-Space)  
+ 
+-[Download Spcial Space v2.0](https://github.com/RaoHammas/Social-Space/releases/tag/Social-Space-v2)  
  
  **-FEATURES**  
  1. Open as many apps as you want.  
